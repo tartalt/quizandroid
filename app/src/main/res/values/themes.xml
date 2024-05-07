@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="My_Culture_Quiz" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+               <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="colorAccent">@color/ColorAccent</item>
+                <item name="black">#FF0000</item>
+    <item name="white">@color/white</item>
+<item name="red">@color/red</item>
+    <item name="blue">@color/blue</item>
+    <item name="green">@color/green</item>
+
+    </style>
+
+    <style name="Theme.MyApplicationF" parent="Base.Theme.MyApplicationF" />
+</resources>

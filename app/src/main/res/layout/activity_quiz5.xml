@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    android:orientation="vertical"
+    android:theme="@style/My_Culture_Quiz"
+    tools:context=".Quiz5">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Question 5/5"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:textSize="30dp"
+    android:textColor="@color/green"
+    />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="339dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="10sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is this a question?5"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_marginStart="25sp"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="22sp">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 1" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 2" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:textSize="20sp"
+            android:background="@color/ColorPrimary"
+            android:textColor="@color/black"
+            android:text="Next" />
+ <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/directions"
+            android:gravity="center"
+            android:textSize="50sp"/>
+ <TextView
+            android:id="@+id/timerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/directions"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:text="Il reste :"/>
+    </LinearLayout>
+</LinearLayout>

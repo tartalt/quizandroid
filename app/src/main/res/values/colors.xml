@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#09EDA5</color>
+     <color name="ColorPrimaryDark">#09EDA5</color>
+     <color name="ColorAccent">#09EDA5</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0227F4</color>
+    <color name="green">#71DD75</color>
+
+    <attr name="black" format="color" />
+    <attr name="white" format="color" />
+    <attr name="red" format="color" />
+    <attr name="blue" format="color" />
+    <attr name="green" format="color" />
+
+</resources>
