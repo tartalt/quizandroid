@@ -23,7 +23,7 @@
         android:layout_width="339dp"
         android:layout_height="192dp"
         android:layout_gravity="center"
-        android:src="@drawable/img"
+        android:src="@drawable/espagne"
         android:layout_marginTop="15sp"
         android:layout_marginBottom="10sp"/>
     <LinearLayout
@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Is this a question?4"
+        android:text="Quel est ce pays?"
         android:textSize="20sp"
         android:textColor="@color/blue"
         android:layout_marginStart="25sp"/>
@@ -49,19 +49,19 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Pologne" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Norvege" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="Espagne" />
         </RadioGroup>
 
         <Button

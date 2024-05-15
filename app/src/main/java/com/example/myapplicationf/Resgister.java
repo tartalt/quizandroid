@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class Resgister extends AppCompatActivity {
@@ -66,6 +68,17 @@ public class Resgister extends AppCompatActivity {
                                 if (task.isSuccessful()) {
 
                                     Toast.makeText(Resgister.this, "Enregistrement réussi", Toast.LENGTH_SHORT).show();
+                                       FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                    if (user != null) {
+                                        // L'utilisateur est connecté
+                                        // Vous pouvez accéder aux informations de l'utilisateur ici
+                                        String userId = user.getUid();
+                                        FirebaseDatabase.getInstance()
+                                                .getReference("test")
+                                                .child(userId)
+                                                .child("nom")
+                                                .setValue(nom);
+                                    }
                                     Intent ig= new Intent(getApplicationContext(), MainActivity.class);
                                     startActivity(ig);
                                     finish();

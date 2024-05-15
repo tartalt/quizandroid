@@ -45,21 +45,14 @@ public class Quiz1 extends AppCompatActivity {
                     if (!answered) {
                         rb = findViewById(rg.getCheckedRadioButtonId());
                         if (rb.getId() == R.id.radioButton1) {
-                            if (secondesrestantes <= 5) {
-                                score += 2;
-                                Intent i1 = new Intent(getApplicationContext(), Quiz2.class);
-                                i1.putExtra("score", score);
-                                startActivity(i1);
-                                finish();
-                                answered = true;
-                            }
                             score += 1;
-                            Intent i1 = new Intent(getApplicationContext(), Quiz2.class);
-                            i1.putExtra("score", score);
-                            startActivity(i1);
-                            finish();
-                            answered = true;
+
                         }
+                        answered = true;
+                        Intent i1 = new Intent(getApplicationContext(), Quiz2.class);
+                        i1.putExtra("score", score);
+                        startActivity(i1);
+                        finish();
                     }
                 }
             }
@@ -98,4 +91,5 @@ public class Quiz1 extends AppCompatActivity {
                 timer.cancel();
             }
         }
+
     }

@@ -23,7 +23,7 @@ public class Quiz4 extends AppCompatActivity {
     TextView timerA;
     CountDownTimer timer;
     Long secondesrestantes=null;
-
+boolean answered = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,20 +39,17 @@ public class Quiz4 extends AppCompatActivity {
             public void onClick(View v) {
                 if (rg.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(Quiz4.this, "Veuiller choisir une réponse", Toast.LENGTH_SHORT).show();
-                } else if (timer != null) {
-                    timer.cancel();
+                }  else {
+                    if (timer != null) {
+                        timer.cancel();
+                    }
+                    if (!answered) {
+                        rb = findViewById(rg.getCheckedRadioButtonId());
+                        if (rb.getId() == R.id.radioButton3) {
+                            score += 1;
 
-                } else {
-                    rb = findViewById(rg.getCheckedRadioButtonId());
-                    if (rb.getId() == R.id.radioButton1) {
-                        if (secondesrestantes<=5){
-                            score += 2;
-                            Intent i1 = new Intent(getApplicationContext(), Quiz5.class);
-                        i1.putExtra("score", score);
-                        startActivity(i1);
-                        finish();
                         }
-                        score += 1;
+                        answered = true;
                         Intent i1 = new Intent(getApplicationContext(), Quiz5.class);
                         i1.putExtra("score", score);
                         startActivity(i1);

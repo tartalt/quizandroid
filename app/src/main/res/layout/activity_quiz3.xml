@@ -23,7 +23,7 @@
         android:layout_width="339dp"
         android:layout_height="192dp"
         android:layout_gravity="center"
-        android:src="@drawable/img"
+        android:src="@drawable/italie"
         android:layout_marginTop="15sp"
         android:layout_marginBottom="10sp"/>
     <LinearLayout
@@ -49,19 +49,19 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Italie" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Lybie" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="Portugal" />
         </RadioGroup>
 
         <Button
